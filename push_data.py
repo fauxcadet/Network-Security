@@ -49,7 +49,7 @@ class NetworkDataExtract():
 if __name__=='__main__':
     FILE_PATH="Network_Data/phisingData.csv"       
     DATABASE="SOURAV"
-    Collection="NetworkData"
+    Collection="NetwrkData"
     networkobj=NetworkDataExtract()
     records=networkobj.cv_to_json(file_path=FILE_PATH)
     no_of_records=networkobj.insert_data_to_mongodb(records,DATABASE,Collection)
